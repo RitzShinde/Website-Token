@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Story from '../components/Story.astro';
+import LoveMessage from '../components/LoveMessage.astro';
+---
+
+<Layout title="Our First Anniversary ❤️">
+  <main class="min-h-screen bg-gradient-to-b from-pink-50 to-white">
+    <Header 
+      title="From College Hallways to Life's Milestones" 
+      subtitle="A Journey of Us ❤️" 
+    />
+    
+    <div class="container mx-auto px-4 py-12">
+      <Story 
+        date="December 25th" 
+        content="We celebrate our first year together — a year filled with love, growth, and unforgettable moments. Our story began in the third year of college, where fate brought us together, and since then, we've been inseparable."
+      />
+      
+      <Story 
+        date="Our Journey" 
+        content="From studying together, to sharing dreams, and then stepping into our first jobs side by side, every step has been a beautiful chapter in our journey."
+      />
+      
+      <Story 
+        date="What I Love About You" 
+        content="What I love most about you, Aditi, is the way you understand me. You're so well-behaved, mature, and thoughtful in everything you do. You know every step you take and always make sure I'm cared for. You pamper me in the most loving ways, and your love for me shines through in all that you do."
+      />
+      
+      <LoveMessage 
+        message="Aditi, you've been my partner in every sense, and I can't wait to see where life takes us next. Here's to us and to the many more years of love, laughter, and adventures ahead."
+        author="With all my love"
+      />
+      
+      <div class="text-center mt-12">
+        <p class="text-pink-600 text-lg">🌹 The flowers I always wanted to give you are now blooming in this digital garden 🌹</p>
+        <p class="mt-4 text-gray-600 text-lg">I wish I could have proposed to you properly with flowers, like you always remind me of. But now, I’m building this website as a token of my love for you, Aditi. You mean the world to me.</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+</style>

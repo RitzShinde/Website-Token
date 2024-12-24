@@ -1,0 +1,13 @@
+---
+interface Props {
+  date: string;
+  content: string;
+}
+
+const { date, content } = Astro.props;
+---
+
+<div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg mb-8">
+  <time class="text-sm text-pink-600 font-semibold">{date}</time>
+  <p class="mt-2 text-gray-700 leading-relaxed">{content}</p>
+</div>

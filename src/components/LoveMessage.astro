@@ -1,0 +1,13 @@
+---
+interface Props {
+  message: string;
+  author: string;
+}
+
+const { message, author } = Astro.props;
+---
+
+<div class="bg-pink-50 p-8 rounded-lg shadow-inner max-w-3xl mx-auto my-12">
+  <blockquote class="text-lg italic text-gray-700">"{message}"</blockquote>
+  <p class="mt-4 text-right text-pink-600 font-semibold">- {author}</p>
+</div>
